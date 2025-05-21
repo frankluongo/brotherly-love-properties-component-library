@@ -1,0 +1,34 @@
+.button {
+  --button-text-color: var(--theme-color-button-text--default);
+  --button-background-color: var(--theme-color-button-background--default);
+  --button-border-color: var(--theme-color-button-border--default);
+  --button-box-shadow-color: var(--theme-color-button-box-shadow--default);
+
+  padding: 1rem;
+
+  color: var(--button-text-color);
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  text-shadow: 0 1px 0 var(--box-shadow);
+
+  appearance: none;
+  background-color: var(--button-background-color);
+  border: 1px solid var(--button-border-color);
+  border-radius: 0.25rem;
+  box-shadow: 0 3px 0 0 var(--button-box-shadow-color);
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out, box-shadow 150ms ease-in-out,
+    transform 150ms ease-in-out;
+}
+
+.button:is(:hover, :focus) {
+  --button-background-color: var(--button-box-shadow-color);
+}
+
+.button[data-variant="secondary"] {
+  --button-text-color: var(--theme-color-button-text--secondary);
+  --button-background-color: var(--theme-color-button-background--secondary);
+  --button-border-color: var(--theme-color-button-border--secondary);
+  --button-box-shadow-color: var(--theme-color-button-box-shadow--secondary);
+}

@@ -1,0 +1,29 @@
+.author {
+  display: flex;
+  max-width: 47rem;
+
+  background-color: var(--theme-color-background--default);
+  border: 1px solid var(--theme-color-border--default);
+  border-radius: 0.25rem;
+}
+
+.author__avatar {
+  --size: clamp(3rem, 6vw, 6rem);
+
+  height: var(--size);
+  width: var(--size);
+
+  object-fit: cover;
+}
+
+.author__column {
+  padding: 0.5rem;
+}
+
+.author__column--right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  border-left: 1px solid var(--theme-color-border--default);
+}

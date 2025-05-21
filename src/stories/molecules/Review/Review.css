@@ -1,0 +1,39 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 20rem;
+  padding: 1rem;
+
+  background-color: var(--theme-color-background--alternate);
+  box-shadow: var(--box-shadow--l2);
+}
+
+.review__avatar {
+  --size: 2.5rem;
+
+  height: var(--size);
+  width: var(--size);
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.review__header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.review-header__column--right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.review__title {
+  font-size: 1rem;
+  font-weight: 700;
+}

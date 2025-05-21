@@ -1,0 +1,20 @@
+.input {
+  min-height: 2.5rem;
+  padding: 0.5rem;
+  width: 100%;
+
+  background: var(--theme-color-background--default);
+
+  border: 1px solid var(--theme-color-border--default);
+  border-radius: 0.25rem;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input__label {
+  font-weight: bold;
+}
