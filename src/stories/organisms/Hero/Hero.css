@@ -42,7 +42,7 @@
 }
 
 @media (min-width: 600px) {
-  .hero-container__column--right {
+  .hero:not(.hero--inverse) .hero-container__column--right {
     --order: 1;
   }
 }

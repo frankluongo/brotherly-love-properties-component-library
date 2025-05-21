@@ -6,16 +6,26 @@
   max-width: 20rem;
   padding: 1rem;
 
-  background-color: var(--theme-color-background--alternate);
+  color: var(--theme-color-text--default);
+
+  background-color: var(--theme-color-background--default);
+  border: 1px solid var(--theme-color-border--default);
+  border-radius: 0.5rem;
   box-shadow: var(--box-shadow--l2);
 }
 
 .review__avatar {
   --size: 2.5rem;
 
+  align-items: center;
+  display: flex;
   height: var(--size);
+  justify-content: center;
   width: var(--size);
 
+  color: var(--theme-color-text--inverse);
+
+  background-color: var(--theme-color-background--inverse);
   border-radius: 50%;
 
   object-fit: cover;

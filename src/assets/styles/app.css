@@ -21,6 +21,8 @@
   /* ================================================ */
   --theme-color-background--default: var(--color-white);
   --theme-color-background--alternate: var(--color-gray--lightest);
+  --theme-color-background--inverse: var(--color-black);
+
   --theme-color-border--default: var(--color-gray--lighter);
   --theme-color-box-shadow: rgba(0, 0, 0, 0.15);
 
@@ -71,6 +73,7 @@
   :root {
     --theme-color-background--alternate: var(--color-gray--darkest);
     --theme-color-background--default: var(--color-black);
+    --theme-color-background--inverse: var(--color-white);
     --theme-color-border--default: var(--color-gray--darker);
     --theme-color-box-shadow: rgba(255, 255, 255, 0.05);
     --theme-color-primary: var(--color-indian-red);
@@ -85,4 +88,12 @@ body {
   font-family: "Figtree", sans-serif;
 
   background: var(--theme-color-background--default);
+}
+
+a {
+  color: var(--theme-color-primary);
+  font-weight: bold;
+  text-decoration: none;
+
+  transition: color 150ms ease-in-out;
 }

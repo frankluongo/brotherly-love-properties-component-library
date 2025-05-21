@@ -4,3 +4,52 @@
   margin-inline: auto;
   padding-inline: clamp(1rem, 5vw, 2rem);
 }
+
+.global\:section {
+  padding-block: clamp(1rem, 5vw, 4rem);
+}
+
+.global\:section--color-alternate {
+  background-color: var(--theme-color-background--alternate);
+
+  color: var(--theme-color-text--alternate);
+}
+
+.global\:section--color-inverse {
+  background-color: var(--theme-color-background--inverse);
+
+  color: var(--theme-color-text--inverse);
+}
+
+/* GRID STUFF */
+
+.global\:flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 5vw, 2rem);
+}
+
+.global\:flex-column--gap-sm {
+  gap: 1rem;
+}
+
+.global\:flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 5vw, 2rem);
+}
+
+.global\:grid-row {
+  display: grid;
+  gap: clamp(1rem, 5vw, 2rem);
+}
+
+@media (min-width: 800px) {
+  .global\:grid-row {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.global\:grid-column--6 {
+  grid-column: span 6;
+}

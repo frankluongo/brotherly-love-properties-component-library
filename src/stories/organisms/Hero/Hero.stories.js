@@ -15,3 +15,13 @@ export const Default = {
     subtitle: "No repairs | Cash Offer | No commissions or fees",
   },
 };
+
+export const InverseOrder = {
+  name: "Inverse Order",
+  args: {
+    order: "inverse",
+    image,
+    title: "Sell My House Fast",
+    subtitle: "Get fast cash for your house",
+  },
+};

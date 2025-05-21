@@ -6,9 +6,9 @@ import Form from "../../molecules/Form/Form";
 
 import "./Hero.css";
 
-export default function Hero({ image, title, subtitle }) {
+export default function Hero({ image, order = "default", title, subtitle }) {
   return html`
-    <section class="hero">
+    <section class="hero hero--${order}">
       <img src="${image}" alt="" class="hero__image" />
       <div class="hero__image-overlay"></div>
       <div class="global:container hero__container">
@@ -17,7 +17,7 @@ export default function Hero({ image, title, subtitle }) {
         </div>
         <div class="hero-container__column hero-container__column--right">
           <div class="hero-container-column__text">
-            <h1 class="hero-content__title">${title}</h1>
+            <h2 class="hero-content__title">${title}</h2>
             <p class="hero-content__subtitle">${subtitle}</p>
           </div>
         </div>
