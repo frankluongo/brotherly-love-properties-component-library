@@ -26,6 +26,7 @@ export const DEFAULT_REASONS = [
 ];
 
 export default function WorkWithUs(reasons = DEFAULT_REASONS) {
+  console.log("reasons", reasons);
   return html`
     <section class="global:section" id="work-with-us">
       <div class="global:container global:flex-column">
