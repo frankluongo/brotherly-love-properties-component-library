@@ -9,7 +9,7 @@ import "./Hero.css";
 export default function Hero({ image, order = "default", title, subtitle }) {
   return html`
     <section class="hero hero--${order}">
-      <img src="${image}" alt="" class="hero__image" />
+      ${image && html`<img src="${image}" alt="" class="hero__image" />`}
       <div class="hero__image-overlay"></div>
       <div class="global:container hero__container">
         <div class="hero-container__column hero-container__column--left">

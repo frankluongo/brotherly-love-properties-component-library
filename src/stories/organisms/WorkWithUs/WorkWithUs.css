@@ -1,0 +1,25 @@
+#work-with-us__title {
+  text-align: center;
+
+  font-size: clamp(1.5rem, 4vw, 6rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.work-with-us__image-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+
+  box-shadow: var(--box-shadow--l1);
+}
+
+.work-with-us__item {
+  max-width: 18rem;
+  padding: 1rem;
+
+  line-height: 1.25;
+  text-align: center;
+
+  background-color: var(--theme-color-background--alternate);
+  border-radius: 0.5rem;
+}
